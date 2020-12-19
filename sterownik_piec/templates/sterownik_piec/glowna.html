@@ -23,6 +23,13 @@
 					
 				</div>
 			</div>
+			{% for czujnik in czujniki %}
+    		<div>
+        		<p>nazwa: {{ czujnik.nazwa }}</p>
+        		<h2><a href="">{{ czujnik.wartosc }}</a></h2>
+        		<p>{{ czujnik.typ}}</p>
+    		</div>
+			{% endfor %}
 			
 			<div id="dom">
 				<svg version="1.1" id="Layer_dom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 250">
