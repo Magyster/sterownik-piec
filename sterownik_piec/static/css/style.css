@@ -1,0 +1,118 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+
+#kontener
+{
+	height: 100%;
+	margin-left: auto;/*wyśrodkowanie strony*/
+	margin-right: auto;/*wyśrodkowanie strony*/
+}
+
+#zegary_dom
+{
+	height: 50%;
+	width: 100%;
+}
+
+#zegary
+{
+	width: 40%;
+	height: 100%;
+	float: left;
+	outline: 5px dotted green;
+}
+
+#zegary1
+{
+	width: 100%;
+	height: 20%;	
+}
+
+#zegary2
+{
+	height: 60%;
+	text-align: center;
+	font-size: 800%;	
+}
+
+#zegary3
+{
+	width: 100%;
+	height: 20%;	
+}
+
+#zegar
+{	
+	width: 100%;
+	height: 100%;
+	color: green;
+}
+
+#dom
+{	
+	width: 60%;
+	height: 100%;
+	float: left;
+	outline: 5px dotted green;
+}
+
+svg
+{
+	width: 100%;
+	height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	font-size: 100%;
+	fill: black;
+}
+
+.T_Z 
+{
+	fill: green;
+}
+
+.st0
+{
+	fill:none;
+	stroke:#231F20;
+	stroke-width:5;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+}
+
+.st1
+{
+	fill:none;
+	stroke:#59C7ED;
+	stroke-width:5;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-miterlimit:10;
+}
+
+.st2
+{
+	opacity:0.24;
+	fill:#0AA7E0;
+}
+.st3
+{
+	fill:#231F20;
+}
+
+#piec
+{
+	height: 50%;
+	clear: both;
+	outline: 5px dotted green;
+}

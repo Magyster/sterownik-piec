@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE HTML>
 <html lang="pl">
 <head>
@@ -6,6 +7,9 @@
 	<meta name="description" content="Wizualizacja danych z czujników" />
 	<meta name="keywords" content="czujniki, dom, " />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/><!-- podlinkowanie css-->
+	<!--<script type="text/javascript" src="jquery-3.5.1.js"></script><!-- podlinkowanie jquery-->
+	<!--<script type="text/javascript" src="skrypty.js"></script><!-- podlinkowanie js-->
 	
 </head>
 
@@ -18,19 +22,13 @@
 				</div>
 				<div id="zegary2">
 					<text id="zegar"></text>
+					
 				</div>
 				<div id="zegary3">
 					
 				</div>
 			</div>
-			{% for czujnik in czujniki %}
-    		<div>
-        		<p>nazwa: {{ czujnik.nazwa }}</p>
-        		<h2><a href="">{{ czujnik.wartosc }}</a></h2>
-        		<p>{{ czujnik.typ}}</p>
-    		</div>
-			{% endfor %}
-			
+						
 			<div id="dom">
 				<svg version="1.1" id="Layer_dom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 250 250">
 
@@ -54,8 +52,8 @@
 					<text id="W_zewnetrzna_A" x="60" y="65">--%</text>	
 					<text id="T_zewnetrzna_A" x="50" y="84">--.-°C</text>
 					<text id="C_zewnetrzna_A" x="50" y="103">---hPa -</text>
-					<text id="W_dom_A" x="160" y="172">--%</text>
-					<text id="T_dom_A" x="150" y="190">--.-°C</text>
+					<text id="W_dom_A" x="160" y="172">--%</text>					
+					<text id="T_dom_A" x="150" y="190">{{czujnik_T_dom_A}}°C</text>
 					<text id="C_dom_A" x="150" y="208">---hPa -</text>
 
 				</svg>		
