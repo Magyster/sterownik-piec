@@ -18,10 +18,11 @@
 		<div id="zegary_dom">
 			<div id="zegary">
 				<div id="zegary1">
-					
+					<text id="data">{{data}}</text>
 				</div>
 				<div id="zegary2">
-					<text id="zegar"></text>
+					
+					<text id="zegar">{{czas}}</text>
 					
 				</div>
 				<div id="zegary3">
@@ -207,11 +208,11 @@
 				   d="m 99.000448,115.34016 v 108.46179 c -16.915534,7.56501 -34.208607,13.85759 -57.480291,0 V 114.52156 l -0.80958,-0.81857"
 				   style="fill:none;stroke:#000000;stroke-width:1.99911;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 				<text id="T_bojler_Z" class="T_Z" x="45" y="170">--.-°C</text>
-				<text id="T_bojler_A" x="45" y="190">--.-°C</text>
+				<text id="T_bojler_A" x="45" y="190">{{czujnik_T_bojler_A}}°C</text>
 				<text id="T_piec_Z" class="T_Z" x="165" y="170">--.-°C</text>
-				<text id="T_piec_A" x="165" y="190">--.-°C</text>
+				<text id="T_piec_A" x="165" y="190">{{czujnik_T_piec_A}}°C</text>
 				<text id="T_grzejniki_Z" class="T_Z" x="325" y="77">--.-°C</text>
-				<text id="T_grzejniki_A" x="325" y="97">--.-°C</text>
+				<text id="T_grzejniki_A" x="325" y="97">{{czujnik_T_grzejniki_A}}°C</text>
 				<text id="S_pompaCWU" x="126" y="146">-</text>
 				<text id="S_pompaCO" x="255" y="76">-</text>
 			</svg>		

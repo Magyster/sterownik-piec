@@ -34,7 +34,9 @@ body
 #zegary1
 {
 	width: 100%;
-	height: 20%;	
+	height: 20%;
+	text-align: center;
+	font-size: 400%;
 }
 
 #zegary2
@@ -48,6 +50,13 @@ body
 {
 	width: 100%;
 	height: 20%;	
+}
+
+#data
+{	
+	width: 100%;
+	height: 100%;
+	color: gray;
 }
 
 #zegar
