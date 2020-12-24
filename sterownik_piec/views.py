@@ -13,9 +13,9 @@ def glowna(request):
         if czujnik.nazwa == 'T_dom_A':
             czujnik_T_dom_A = czujnik.wartosc#Czujniki.objects.filter(nazwa='T_dom_A')
         if czujnik.nazwa == 'W_dom_A':
-            czujnik_W_dom_A = czujnik.wartosc
+            czujnik_W_dom_A = int(czujnik.wartosc)
         if czujnik.nazwa == 'C_dom_A':
-            czujnik_C_dom_A = czujnik.wartosc
+            czujnik_C_dom_A = int(czujnik.wartosc)
         if czujnik.nazwa == 'T_bojler_A':
             czujnik_T_bojler_A = czujnik.wartosc
         if czujnik.nazwa == 'T_piec_A':
