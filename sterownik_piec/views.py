@@ -12,13 +12,17 @@ def glowna(request):
     for czujnik in czujniki:
         if czujnik.nazwa == 'T_dom_A':
             czujnik_T_dom_A = czujnik.wartosc#Czujniki.objects.filter(nazwa='T_dom_A')
+        if czujnik.nazwa == 'W_dom_A':
+            czujnik_W_dom_A = czujnik.wartosc
+        if czujnik.nazwa == 'C_dom_A':
+            czujnik_C_dom_A = czujnik.wartosc
         if czujnik.nazwa == 'T_bojler_A':
             czujnik_T_bojler_A = czujnik.wartosc
         if czujnik.nazwa == 'T_piec_A':
             czujnik_T_piec_A = czujnik.wartosc
         if czujnik.nazwa == 'T_grzejniki_A':
             czujnik_T_grzejniki_A = czujnik.wartosc
-    return render(request, 'sterownik_piec/glowna.html', { 'data':data, 'czas':czas, 'czujnik_T_dom_A':czujnik_T_dom_A, 'czujnik_T_bojler_A':czujnik_T_bojler_A, 'czujnik_T_piec_A':czujnik_T_piec_A, 'czujnik_T_grzejniki_A':czujnik_T_grzejniki_A,})
+    return render(request, 'sterownik_piec/glowna.html', { 'data':data, 'czas':czas, 'czujnik_T_dom_A':czujnik_T_dom_A, 'czujnik_W_dom_A':czujnik_W_dom_A, 'czujnik_C_dom_A':czujnik_C_dom_A,'czujnik_T_bojler_A':czujnik_T_bojler_A, 'czujnik_T_piec_A':czujnik_T_piec_A, 'czujnik_T_grzejniki_A':czujnik_T_grzejniki_A,})
 
 def zapis_do_bazy(request):
     if request.method == 'POST':
