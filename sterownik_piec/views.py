@@ -6,23 +6,19 @@ import datetime
 
 def glowna(request):
     czujniki = Czujniki.objects.all()
+    dane = {}
     teraz = datetime.datetime.now()
     data = teraz.date()
     czas = teraz.time()
+    dane['data'] = data
+    dane['czas'] = czas
     for czujnik in czujniki:
-        if czujnik.nazwa == 'T_dom_A':
-            czujnik_T_dom_A = czujnik.wartosc#Czujniki.objects.filter(nazwa='T_dom_A')
-        if czujnik.nazwa == 'W_dom_A':
-            czujnik_W_dom_A = int(czujnik.wartosc)
-        if czujnik.nazwa == 'C_dom_A':
-            czujnik_C_dom_A = int(czujnik.wartosc)
-        if czujnik.nazwa == 'T_bojler_A':
-            czujnik_T_bojler_A = czujnik.wartosc
-        if czujnik.nazwa == 'T_piec_A':
-            czujnik_T_piec_A = czujnik.wartosc
-        if czujnik.nazwa == 'T_grzejniki_A':
-            czujnik_T_grzejniki_A = czujnik.wartosc
-    return render(request, 'sterownik_piec/glowna.html', { 'data':data, 'czas':czas, 'czujnik_T_dom_A':czujnik_T_dom_A, 'czujnik_W_dom_A':czujnik_W_dom_A, 'czujnik_C_dom_A':czujnik_C_dom_A,'czujnik_T_bojler_A':czujnik_T_bojler_A, 'czujnik_T_piec_A':czujnik_T_piec_A, 'czujnik_T_grzejniki_A':czujnik_T_grzejniki_A,})
+        if(czujnik.typ == 'T'):
+            dane[czujnik.nazwa] =  round(czujnik.wartosc,1)#Czujniki.objects.filter(nazwa='T_dom_A')
+        else:
+            dane[czujnik.nazwa] =  int(czujnik.wartosc)
+        
+    return render(request, 'sterownik_piec/glowna.html', dane)
 
 def zapis_do_bazy(request):
     if request.method == 'POST':

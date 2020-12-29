@@ -86,7 +86,7 @@ svg
 
 .T_Z 
 {
-	fill: green;
+	fill: rgb(5, 40, 5);
 }
 
 .st0
@@ -124,4 +124,53 @@ svg
 	height: 50%;
 	clear: both;
 	outline: 5px dotted green;
+}
+
+.pc0
+{
+	fill:none;
+	stroke:red;
+	stroke-width:4;
+}
+
+.pc1
+{
+	fill:none;
+	stroke:blue;
+	stroke-width:4;
+}
+
+.pc2
+{
+	fill:orange;
+	stroke:black;
+	stroke-width:2;	
+}
+
+.pc3
+{
+	fill:white;
+	stroke:black;
+	stroke-width:2;	
+}
+
+.pc4
+{
+	fill:url(#linearGradient1);
+	stroke:#000000;
+	stroke-width:5;
+}
+
+.pc5
+{
+	fill:gray;
+	stroke:#000000;
+	stroke-width:3;	
+}
+
+.pc6
+{
+	fill:url(#linearGradient1);
+	stroke:#000000;
+	stroke-width:3;	
 }
