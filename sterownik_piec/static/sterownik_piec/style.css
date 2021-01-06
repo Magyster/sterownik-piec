@@ -41,7 +41,7 @@ body
 
 #zegary2
 {
-	height: 60%;
+	height: 30%;
 	text-align: center;
 	font-size: 800%;	
 }
@@ -49,7 +49,7 @@ body
 #zegary3
 {
 	width: 100%;
-	height: 20%;
+	height: 50%;
 	text-align: center;
 }
 
@@ -57,8 +57,7 @@ button
 {
 	display: inline-block;
 	padding: 15px 25px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin: 4% 10% 2% 10%;
 	font-size: 36px;
 	cursor: pointer;
 	text-align: center;
