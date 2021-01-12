@@ -61,7 +61,7 @@ class ZapisDoBazy(View):
         czujnik = Czujniki.objects.get(nazwa = 'T_grzejniki_Z')
         t_dom = Czujniki.objects.get(nazwa='T_dom_A')
         t_zewnetrzna = Czujniki.objects.get(nazwa='T_zewnetrzna_A')
-        wartosc = 60 + (25 - t_dom.wartosc) - t_zewnetrzna.wartosc / 2
+        wartosc = 60 + (23 - t_dom.wartosc) - t_zewnetrzna.wartosc / 2
         czujnik.wartosc = wartosc
         czujnik.save()
         return JsonResponse(None, safe=False)

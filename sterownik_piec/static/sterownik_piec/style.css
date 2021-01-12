@@ -34,16 +34,30 @@ body
 #zegary1
 {
 	width: 100%;
-	height: 20%;
+	height: 10%;
 	text-align: center;
-	font-size: 400%;
+	font-size: 3vw;
+}
+
+#data
+{	
+	width: 100%;
+	height: 100%;
+	color: gray;
 }
 
 #zegary2
 {
-	height: 30%;
+	height: 40%;
 	text-align: center;
-	font-size: 800%;	
+	font-size: 10vw;	
+}
+
+#zegar
+{	
+	width: 100%;
+	height: 100%;
+	color: green;
 }
 
 #zegary3
@@ -56,9 +70,9 @@ body
 button 
 {
 	display: inline-block;
-	padding: 15px 25px;
-	margin: 4% 10% 2% 10%;
-	font-size: 36px;
+	padding: 2vw 2vw;
+	margin: 2vw 2vw 2vw 2vw;
+	font-size: 3vw;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
@@ -87,20 +101,6 @@ button:active
 {
 	opacity: 0.6;
 	cursor: not-allowed;
-}
-
-#data
-{	
-	width: 100%;
-	height: 100%;
-	color: gray;
-}
-
-#zegar
-{	
-	width: 100%;
-	height: 100%;
-	color: green;
 }
 
 #dom
